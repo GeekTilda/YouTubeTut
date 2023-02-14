@@ -56,29 +56,34 @@ public class Main {
         JLabel label = new JLabel();
         label.setText("Hello");
         label.setIcon(icon);
-        label.setVerticalAlignment(JLabel.BOTTOM);
-        label.setHorizontalAlignment(JLabel.RIGHT);
+        //label.setVerticalAlignment(JLabel.BOTTOM);
+        //label.setHorizontalAlignment(JLabel.RIGHT);
+        label.setBounds(100,100,200,200);
 
         JPanel pinkpanel = new JPanel();
         pinkpanel.setBackground(Color.pink);
         pinkpanel.setBounds(0,0,250,250);
-        pinkpanel.setLayout(new BorderLayout());
+        //pinkpanel.setLayout(new BorderLayout());
+        pinkpanel.setLayout(null);
 
         JPanel cyanpanel = new JPanel();
         cyanpanel.setBackground(Color.cyan);
         cyanpanel.setBounds(250,0,250,250);
+        //cyanpanel.setLayout(new BorderLayout());
+        cyanpanel.setLayout(null);
 
         JPanel bluepanel = new JPanel();
         bluepanel.setBackground(Color.blue);
         bluepanel.setBounds(0,250,500,250);
-        bluepanel.setLayout(new BorderLayout());
+        //bluepanel.setLayout(new BorderLayout());
+        bluepanel.setLayout(null);
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setSize(750,750);
         frame.setVisible(true);
-        pinkpanel.add(label);
+        bluepanel.add(label);
         frame.add(pinkpanel);
         frame.add(cyanpanel);
         frame.add(bluepanel);
